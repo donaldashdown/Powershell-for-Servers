@@ -1,0 +1,2 @@
+-------------DISM Mount and Update Offline Virtual HDD--------------
+dism /image:"image_file_name"\ /Add-package /PackagePath:"package_path" (msu or cab)
