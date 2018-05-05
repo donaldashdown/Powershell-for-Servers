@@ -1,4 +1,6 @@
 -------------DISM Mount and Update Offline Virtual HDD--------------
+dism /mount-image /imagefile:"file_path" /index:1  /mountdir:"dir_path"
 dism /get-mountedimageinfo
 dism /get-imageinfo /imagefile:"file_path"
-dism /image:"image_file_name"\ /Add-package /PackagePath:"package_path" (msu or cab)
+dism /image:"file_path" /get-packages
+dism /image:"image_file_path"\ /Add-package /PackagePath:"package_path" (msu or cab)
